@@ -1,0 +1,354 @@
+
+/* Google Fonts link */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none!important;
+}
+
+/* **** root selector : Colors to be used **** */
+
+:root{
+    --background-color-header:
+    --background-color-body:
+    --background-color-button:#2663ef;
+    --background-color-card:
+    --background-color-div1:
+    --background-color-div2:
+    --background-color-div3:
+    --background-color-div4:
+    --background-color-div5:
+    --background-color-form:
+    --background-color-icon:
+    --background-color-footer:
+
+
+    --text-color-navbar:#000000;
+    --text-color-button:#ffffff;
+    --text-color-heading:
+    --text-color-subheading:
+    --text-color-para:
+    --text-color-links:
+    --text-color-card:
+    --text-color-forms:
+    --text-color-icon:
+    --text-color-footer:
+
+    --box-shadow-color1:
+    --box-shadow-color2:
+    --box-shadow-color3:
+
+    --custom-color-primary:
+    --custom-color-secondary:
+    --custom-color-tertiary:
+    --custom-color-quaternary:
+
+}
+
+
+/* ***** Common Styling Start ***** */
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ***** Common Styling End ***** */
+
+
+
+
+/* ************* 1.  Header Section  Styling Start *************  */
+    header{
+        width:100%;
+        height:6.25rem; /* 100px */
+
+        border: 1px solid black;
+    }
+
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    i{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /* Logo styling start */
+    .logo{
+        width:10%;
+        height:6.25rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+        /* border: 1px solid black; */
+    }
+
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    /* Logo styling end */
+
+    /* Navbar styling start */
+    .navbar{
+        width:90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+        /* border: 1px solid red; */
+
+    }
+
+    .navbar .navlist{
+        display: flex;
+        align-items: center;
+
+
+        /* border: 1px solid blue; */
+
+    }
+
+    .navbar .navlist li{
+        padding: 32px !important;
+
+        /* border: 1px solid black; */
+
+    }
+
+    .navbar .navlist li a{
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--text-color-navbar);
+        letter-spacing: 1px;
+
+    }
+
+    .navbar .navlist li a:hover{
+        border-bottom:1px solid #00062b;
+    }
+
+    /* Mega menu styling start */
+    .megabox{
+        position: absolute;
+        top:100px;
+        right:30px;
+        left:30px;
+        padding:30px;
+        background: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        visibility: hidden;
+
+        
+        /* border: 2px solid green; */
+    }
+
+    .mega-content{
+        display: flex;
+        justify-content: space-around;
+
+        /* border: 2px solid red; */
+    }
+
+    .mega-row{
+        padding: 20px;
+        /* border: 1px solid blue; */
+    }
+
+
+    .mega-row .mega-list{
+        padding: 0px!important;
+        border-right:1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .mega-row:nth-child(5)  .mega-list{
+        border-right: none!important;
+    }
+    .mega-row .mega-list li{
+        margin: 0!important;
+        padding:10px 3px!important;
+        /* height:85px; */
+        /* border: 1px solid black; */
+    }
+
+    .mega-row .mega-list li h1{
+        font-size: 0.75rem!important; 
+        color: #ffffff;  
+        cursor: default;   
+        /* border-bottom:1px solid #ffffff; */
+    }
+
+    .mega-row .mega-list li a{
+        font-size: 0.75rem; /* 10px */
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .mega-row .mega-list li a:hover{
+        /* padding-left:10px;
+        border-left: 2px solid #ffffff;*/
+        border-bottom: none!important;
+        color: #ffffff;
+    }
+
+    .navlist li:nth-child(2):hover > .megabox{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Mega menu styling end */
+
+    .contact-btn{
+        /* width: 20%; */
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    #btn{
+        width:150px;
+        height: 50px;
+        border:2px solid rgba(38, 99, 239, 0.5);
+        border-radius: 8px;
+        background:#2663ef; /* --background-color-button */
+        box-shadow:rgba(38, 99, 239, 0.5) 0.2px 2px 0 ;
+
+    }
+
+    #btn a{
+        color: var(--text-color-button);
+        font-size: 0.875rem!important; /* 14px */
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    #btn:hover > a{
+        border-bottom:none ;
+    }
+        
+
+    /* Navbar styling start */
+
+
+/* ******************* Header Section Styling  End ************* */
+
+
+
+
+
+
+
+/* ************** R E S P O N S I V E -- D E S I G N ************** */
+
+/* 1em = 16px => 79.938em = 1279px */
+@media(max-width:79.938em) {
+   header{
+    width: 100%;
+    height: 6.25rem;
+    border: 1px solid black;
+   }
+
+   .wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    border: 1px solid black;
+
+   }
+
+   i{
+    position: absolute;
+    right: 0;
+    top:40px;
+    padding: 0 20px;
+    font-size: 24px;
+    color: black;
+    font-weight: 800;
+    opacity: 1;
+    visibility: visible;
+   }
+
+   .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:15%;
+   }
+
+   .logo img{
+    width: 100%;
+    height: 100%;
+   }
+
+   .navbar{
+    position: absolute;
+    /* top: 0; */
+    top: 100px;
+    right: 0;
+    width:200px;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    animation: slideIn 1s forwards ;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+
+    border: 1px solid black;
+   }
+
+   @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  
+   .navbar .navlist{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid black;
+   }
+
+   .navbar .navlist li{
+    width: 100%;
+    border: 1px solid red;
+   }
+
+   .navbar .navlist li a{
+    float: right;
+   }
+
+   .wrapper:first-child:hover > .navbar{
+    opacity: 1;
+    visibility: visible;
+   }
+
+   .contact-btn{
+    display: none;
+   }
+
+   .megabox{
+    display: none;
+   }
+}
